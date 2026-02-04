@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-[#F6F5F5]">
-    <header>
-      <nav
-        class="flex flex-row justify-around items-center h-24 bg-white shadow-md">
+  <body class="bg-[#F6F5F5] w-full min-h-screen overflow-x-hidden">
+    <header class="w-full">
+      <nav class="flex justify-between md:justify-around items-center h-20 md:h-24 bg-white shadow-md w-full px-4 md:px-0">
         <div class="text-4xl text-[#35CD8C] font-bold p-5 hover:cursor-pointer">Restoria</div>
-        <ul class="flex flex-row gap-8 justify-center">
+        <ul class="hidden md:flex flex-row gap-8 justify-center">
           <li><a class="text-lg font-bold text-[#35CD8C] hover:text-[#35CD8C] hover:border-b-2 hover:border-b-[#35CD8C]" href="#">Home</a></li>
           <li><a class="text-lg font-bold hover:text-[#35CD8C] hover:border-b-2 hover:border-b-[#35CD8C]" href="#">About</a></li>
           <li><a class="text-lg font-bold hover:text-[#35CD8C] hover:border-b-2 hover:border-b-[#35CD8C]" href="#">Food</a></li>
@@ -26,48 +25,31 @@
           <li><a class="text-lg font-bold hover:text-[#35CD8C] hover:border-b-2 hover:border-b-[#35CD8C]" href="#">Chefs</a></li>
           <li><a class="text-lg font-bold hover:text-[#35CD8C] hover:border-b-2 hover:border-b-[#35CD8C]" href="#">Contact</a></li>
         </ul>
-        <button
-          class="bg-[#35CD8C] text-white text-lg px-6 py-2 border-2 border-[#35CD8C] rounded-full hover:bg-white hover:text-[#35CD8C] hover:cursor-pointer">Reservation</button>
+        <button class="hidden md:block bg-[#35CD8C] text-white text-lg px-6 py-2 border-2 border-[#35CD8C]          rounded-full hover:bg-white hover:text-[#35CD8C] hover:cursor-pointer">
+        Reservation
+        </button>
 
         <div class="flex flex-row gap-5">
-          <i
-            class="fa-brands fa-facebook-f text-2xl text-[#35CD8C] hover:cursor-pointer"
-          ></i>
-          <i
-            class="fa-brands fa-twitter text-2xl text-[#35CD8C] hover:cursor-pointer"
-          ></i>
-          <i
-            class="fa-brands fa-instagram text-2xl text-[#35CD8C] hover:cursor-pointer"
-          ></i>
+          <i class="fa-brands fa-facebook-f text-2xl text-[#35CD8C] hover:cursor-pointer"></i>
+          <i class="fa-brands fa-twitter text-2xl text-[#35CD8C] hover:cursor-pointer"></i>
+          <i class="fa-brands fa-instagram text-2xl text-[#35CD8C] hover:cursor-pointer"></i>
         </div>
       </nav>
 
-      <div
-        class="flex flex-row gap-6 justify-center items-center mt-7 relative w-11/12 mx-auto mb-20"
-      >
+
+    <!-- Banner section -->
+      <div class="flex flex-row gap-6 justify-center items-center mt-7 relative w-11/12 mx-auto mb-20">
         <div>
-          <h1 class="text-8xl font-bold text-[#251F56]">
-            The Delicious <br />
-            Food House
-          </h1>
+          <h1 class="text-4xl md:text-8xl mt-4 md:mt-0 font-bold text-[#251F56]">The Delicious<br />Food House</h1>
           <p class="text-black mt-6">
-            Baume is a restaurant, bar and coffee roastery located on London. We
-            have awesome <br />
-            recipes and the most talented chefs in town.
-          </p>
+            Baume is a restaurant, bar and coffee roastery located on London. We have awesome <br />
+            recipes and the most talented chefs in town.</p>
 
-          <div class="flex flex-row gap-7 mt-9">
-            <button
-              class="bg-[#35CD8C] text-white text-lg px-6 py-2 border-2 border-[#35CD8C] rounded-full hover:bg-white hover:text-[#35CD8C] hover:cursor-pointer"
-            >
-              Discover Menu
-            </button>
+          <div class="flex flex-row gap-4 mt-9">
+            <button class="bg-[#35CD8C] text-white max-md:text-sm text-lg px-6 py-2 border-2 border-[#35CD8C] rounded-full hover:bg-white hover:text-[#35CD8C] hover:cursor-pointer">Discover Menu</button>
 
-            <button
-              class="ml-4 bg-white text-[#35CD8C] text-lg px-6 py-2 border-2 border-[#35CD8C] rounded-full hover:bg-[#35CD8C] hover:text-white hover:cursor-pointer"
-            >
-              Contact
-            </button>
+             <button
+              class="ml-4 bg-white text-[#35CD8C] max-md:text-sm text-lg px-6 py-2 border-2 border-[#35CD8C] rounded-full hover:bg-[#35CD8C] hover:text-white hover:cursor-pointer">Contact</button>
           </div>
         </div>
 
@@ -75,39 +57,46 @@
           <img src="./Images/banner-thumb.png" alt="" />
         </div>
 
-        <img class="absolute top-9 left-0" src="./Images/chiley.png" alt="" />
+        <img class="absolute top-9 left-0 hidden md:block" src="./Images/chiley.png" alt="" />
+
       </div>
     </header>
 
-    <div
-      class="flex flex-row justify-around items-center w-11/12 mx-auto mt-20 mb-20 pl-5 bg-[#fce6d3]"
-    >
-      <div class="w-1/2">
-        <h1 class="text-7xl font-bold text-[#251F56] items-center">
-          Story Telling
-        </h1>
-        <p class="text-[#35CD8C] mt-6">
-          QUALITY FOOD DELICATESSENS & MAGIC PLACE
-        </p>
-        <div class="w-14 h-0.5 bg-red-500 mt-6"></div>
-        <p class="w-full mt-6">
-          Baume is about the combined efforts of chefs, cooks, servers, farmers,
-          vineyards, and brewers and I see that partnership extending to our
-          guests by providing the highest quality food Numerous commentators
-          have also referred to the supposed restaurant owner's eccentric habit
-          of touting for custom outside his establishment, dressed in
-          aristocratic fashion and brandishing a swordoperators, One Tour.
-        </p>
-      </div>
+    <div class="flex flex-col md:flex-row justify-around items-center w-11/12 mx-auto mt-20 mb-20 bg-[#fce6d3]">
+  <!-- Mobile: column layout, Tablet+: row layout -->
 
-      <div class="w-1/2">
-        <img
-          class="w-full h-auto"
-          src="./Images/img1.jpg"
-          alt="Story Telling Image"
-        />
-      </div>
-    </div>
+  <div class="w-full md:w-1/2">
+    <!-- Mobile: full width, Tablet+: half width -->
+    <h1 class="text-4xl md:text-7xl font-bold text-[#251F56] text-center md:text-left">
+      <!-- Mobile: smaller text, center-aligned; Tablet+: bigger text, left-aligned -->
+      Story Telling
+    </h1>
+
+    <p class="text-[#35CD8C] mt-4 text-center md:text-left">
+      <!-- Slightly smaller margin top for mobile; center on mobile -->
+      QUALITY FOOD DELICATESSENS & MAGIC PLACE
+    </p>
+
+    <div class="w-14 h-0.5 bg-red-500 mt-4 mx-auto md:mx-0"></div>
+    <!-- Mobile: center line; Tablet+: left-aligned -->
+
+    <p class="mt-4 text-center md:text-left">
+      <!-- Mobile: smaller top margin, center text -->
+      Baume is about the combined efforts of chefs, cooks, servers, farmers,
+      vineyards, and brewers and I see that partnership extending to our
+      guests by providing the highest quality food Numerous commentators
+      have also referred to the supposed restaurant owner's eccentric habit
+      of touting for custom outside his establishment, dressed in
+      aristocratic fashion and brandishing a swordoperators, One Tour.
+    </p>
+  </div>
+
+  <div class="w-full md:w-1/2 mt-6 md:mt-0">
+    <!-- Mobile: full width image, margin top added; Tablet+: half width, no margin -->
+    <img class="w-full h-auto" src="./Images/img1.jpg" alt="Story Telling Image" />
+  </div>
+</div>
+
 
     <div>
       <h2
@@ -120,76 +109,17 @@
       </h1>
     </div>
 
-    <!-- <div class=" mt-20 flex flex-row justify-center gap-10 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
-        <div class="flex flex-col bg-[#35CD8C] items-center justify-center w-70 p-3 h-96 mx-auto mt-6 mb-16 rounded-xl hover:cursor-pointer">
-          <img class="rounded-xl" src="./Images/img4.jpg" alt="">
-          <h1 class="mt-2.5 text-3xl text-white font-bold text-center">$18</h1>
-          <h2 class="mt-2.5 text-lg text-white font-bold text-center">Super BBQ Cool Burger</h2>
-          <p class="mt-2.5 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.</p>
-        </div>
-        <div class="flex flex-col bg-[#35CD8C] items-center justify-center w-70 p-3 h-96 mx-auto mt-6 mb-16 rounded-xl hover:cursor-pointer">
-          <img class="rounded-xl" src="./Images/img4.jpg" alt="">
-          <h1 class="mt-2.5 text-3xl text-white font-bold text-center">$18</h1>
-          <h2 class="mt-2.5 text-lg text-white font-bold text-center">Super BBQ Cool Burger</h2>
-          <p class="mt-2.5 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.</p>
-        </div>
-        <div class="flex flex-col bg-[#35CD8C] items-center justify-center w-70 p-3 h-96 mx-auto mt-6 mb-16 rounded-xl hover:cursor-pointer">
-          <img class="rounded-xl" src="./Images/img4.jpg" alt="">
-          <h1 class="mt-2.5 text-3xl text-white font-bold text-center">$18</h1>
-          <h2 class="mt-2.5 text-lg text-white font-bold text-center">Super BBQ Cool Burger</h2>
-          <p class="mt-2.5 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.</p>
-        </div>
-        <div class="flex flex-col bg-[#35CD8C] items-center justify-center w-70 p-3 h-96 mx-auto mt-6 mb-16 rounded-xl hover:cursor-pointer">
-          <img class="rounded-xl" src="./Images/img4.jpg" alt="">
-          <h1 class="mt-2.5 text-3xl text-white font-bold text-center">$18</h1>
-          <h2 class="mt-2.5 text-lg text-white font-bold text-center">Super BBQ Cool Burger</h2>
-          <p class="mt-2.5 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.</p>
-        </div>
-        <div class="flex flex-col bg-[#35CD8C] items-center justify-center w-70 p-3 h-96 mx-auto mt-6 mb-16 rounded-xl hover:cursor-pointer">
-          <img class="rounded-xl" src="./Images/img4.jpg" alt="">
-          <h1 class="mt-2.5 text-3xl text-white font-bold text-center">$18</h1>
-          <h2 class="mt-2.5 text-lg text-white font-bold text-center">Super BBQ Cool Burger</h2>
-          <p class="mt-2.5 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.</p>
-        </div>
-        <div class="flex flex-col bg-[#35CD8C] items-center justify-center w-70 p-3 h-96 mx-auto mt-6 mb-16 rounded-xl hover:cursor-pointer">
-          <img class="rounded-xl" src="./Images/img4.jpg" alt="">
-          <h1 class="mt-2.5 text-3xl text-white font-bold text-center">$18</h1>
-          <h2 class="mt-2.5 text-lg text-white font-bold text-center">Super BBQ Cool Burger</h2>
-          <p class="mt-2.5 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.</p>
-        </div>
-        <div class="flex flex-col bg-[#35CD8C] items-center justify-center w-70 p-3 h-96 mx-auto mt-6 mb-16 rounded-xl hover:cursor-pointer">
-          <img class="rounded-xl" src="./Images/img4.jpg" alt="">
-          <h1 class="mt-2.5 text-3xl text-white font-bold text-center">$18</h1>
-          <h2 class="mt-2.5 text-lg text-white font-bold text-center">Super BBQ Cool Burger</h2>
-          <p class="mt-2.5 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.</p>
-        </div>
-        <div class="flex flex-col bg-[#35CD8C] items-center justify-center w-70 p-3 h-96 mx-auto mt-6 mb-16 rounded-xl hover:cursor-pointer">
-          <img class="rounded-xl" src="./Images/img4.jpg" alt="">
-          <h1 class="mt-2.5 text-3xl text-white font-bold text-center">$18</h1>
-          <h2 class="mt-2.5 text-lg text-white font-bold text-center">Super BBQ Cool Burger</h2>
-          <p class="mt-2.5 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.</p>
-        </div>
-      </div> -->
-
-    <!-- PARENT: OUTER CONTAINER (controls visible width: 4 cards) -->
     <div class="max-w-[1100px] mx-auto overflow-hidden">
-      <!-- PARENT: SLIDER TRACK (scrollable area) -->
       <div
-        class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide mt-8 mb-7"
-      >
-        <!-- CHILD: CARD 1 -->
+        class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide mt-8 mb-7">
         <div
-          class="min-w-[250px] bg-emerald-400 text-white rounded-2xl p-6 snap-start"
-        >
+          class="min-w-[250px] bg-emerald-400 text-white rounded-2xl p-6 snap-start">
           <img src="./Images/img4.jpg" class="rounded-xl mb-4" />
           <h2 class="text-3xl font-bold">$18</h2>
           <h3 class="text-lg font-semibold mt-1">Super BBQ Cool Burger</h3>
-          <p class="text-sm mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+          <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
-        <!-- CHILD: CARD 2 -->
         <div
           class="min-w-[250px] bg-emerald-400 text-white rounded-2xl p-6 snap-start"
         >
